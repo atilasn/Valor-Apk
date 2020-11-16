@@ -40,7 +40,7 @@ class _Resultado extends State<Resultado> {
                       right: 150,
                     ),
                     child: Text(
-                      'Valor = ',
+                      'Valori = ',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
