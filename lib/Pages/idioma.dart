@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:valor_app/Pages/Resultado.dart';
-import 'package:valor_app/Pages/dashboard.dart';
+
 
 
 
@@ -21,7 +21,7 @@ class _Idiomas extends State<Idiomas> {
         body: Container(
           margin: EdgeInsets.only(left: 10, right: 10, top: 30),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 5),
@@ -35,7 +35,7 @@ class _Idiomas extends State<Idiomas> {
                 height: 40,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.all(1),
@@ -44,7 +44,7 @@ class _Idiomas extends State<Idiomas> {
                       child: Text(
                         'Única Lingua',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
@@ -64,7 +64,7 @@ class _Idiomas extends State<Idiomas> {
                       child: Text(
                         'Bilíngue',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
@@ -84,7 +84,7 @@ class _Idiomas extends State<Idiomas> {
                       child: Text(
                         'Multilíngue',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),

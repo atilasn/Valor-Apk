@@ -20,7 +20,7 @@ class _Integracao_Web extends State<Integracao_Web> {
         body: Container(
           margin: EdgeInsets.only(left: 10, right: 10, top: 30),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 5),

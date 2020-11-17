@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:valor_app/Pages/Interface.dart';
 
-
-
 class android_iso extends StatefulWidget {
   @override
   _android_isoState createState() => _android_isoState();
@@ -19,12 +17,12 @@ class _android_isoState extends State<android_iso> {
             title: Text("Qual tipo de aplicativo?")),
         body: Container(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              SizedBox(height: 1),
-              Row(
+              Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only( top:30,left: 100),
+                    padding: const EdgeInsets.only(top: 30, left: 5),
                     child: Image.asset(
                       "assets/sistema.png",
                       height: 200,
@@ -34,62 +32,70 @@ class _android_isoState extends State<android_iso> {
                 ],
               ),
               SizedBox(height: 30),
-
-              Padding(
-                padding: const EdgeInsets.only(top: 10, left: 20,right: 10),
-                child: RaisedButton(
-                  color: Colors.lightBlueAccent[100],
-                  child: const Text(
-                    'Android & IOS',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(1),
+                    child: RaisedButton(
+                      color: Colors.lightBlueAccent[100],
+                      child: Text(
+                        'Android & IOS',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => InterFace()));
+                      },
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => InterFace()));
-                  },
-                ),
-              ),
-              SizedBox(height: 30),
-              Padding(
-                padding: const EdgeInsets.only(top: 10, left: 20,right: 10),
-                child: RaisedButton(
-                  color: Colors.lightBlueAccent[100],
-                  child: const Text(
-                    'IOS',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(1),
+                    child: RaisedButton(
+                      color: Colors.lightBlueAccent[100],
+                      child: Text(
+                        'Android',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => InterFace()));
+                      },
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => InterFace()));
-                  },
-                ),
-              ),
-              SizedBox(height: 30),
-              Padding(
-                padding: const EdgeInsets.only(top: 10, left: 20,right: 10),
-                child: RaisedButton(
-                  color: Colors.lightBlueAccent[100],
-                  child: const Text(
-                    'Android',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(1),
+                    child: RaisedButton(
+                      color: Colors.lightBlueAccent[100],
+                      child: Text(
+                        'IOS',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => InterFace()));
+                      },
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => InterFace()));
-                  },
-                ),
+                ],
               ),
             ],
           ),

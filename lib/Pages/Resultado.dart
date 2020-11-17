@@ -14,11 +14,11 @@ class _Resultado extends State<Resultado> {
         appBar: AppBar(
             centerTitle: true,
             backgroundColor: Colors.lightBlueAccent[100],
-            title: Text("Valor Apriximado")),
+            title: Text("Valor Aproximado")),
         body: Container(
           margin: EdgeInsets.only(left: 10, right: 10, top: 30),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 5),
@@ -32,11 +32,11 @@ class _Resultado extends State<Resultado> {
                 height: 40,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.only(
-                      top: 10,
+                      top: 0,
                       right: 150,
                     ),
                     child: Text(
@@ -54,7 +54,7 @@ class _Resultado extends State<Resultado> {
                 height: 40,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.all(1),

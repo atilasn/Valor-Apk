@@ -18,9 +18,10 @@ class _InterFaceState extends State<InterFace> {
             title: Text("Qual tipo de Interface ?")),
         body: Container(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 75, top: 30),
+                padding: const EdgeInsets.only(left: 75, top: 10),
                 child: FlatButton(
                   child: Image.asset(
                     "assets/interface_simples.png",
@@ -34,7 +35,7 @@ class _InterFaceState extends State<InterFace> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10, left: 110),
+                padding: const EdgeInsets.only(top: 2, left: 110),
                 child: Text(
                   'Interface Simples          ',
                   style: TextStyle(
@@ -44,9 +45,9 @@ class _InterFaceState extends State<InterFace> {
                   ),
                 ),
               ),
-              SizedBox(height: 40),
+
               Padding(
-                padding: const EdgeInsets.only(top: 10, left: 75),
+                padding: const EdgeInsets.only(top: 2, left: 80),
                 child: FlatButton(
                   child: Image.asset(
                     "assets/Personalizado.png",
@@ -60,7 +61,7 @@ class _InterFaceState extends State<InterFace> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10, left: 80),
+                padding: const EdgeInsets.only(top: 2, left: 80),
                 child: Text(
                   'Interface Personalizada',
                   style: TextStyle(

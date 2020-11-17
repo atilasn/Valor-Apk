@@ -17,11 +17,11 @@ class _ContatosState extends State<Contatos> {
       body: Container(
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(
-                  top: 60,
+                  top: 100,
                   right: 30,
                 ),
                 child: Text(
@@ -33,9 +33,9 @@ class _ContatosState extends State<Contatos> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 40),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(1),
                 child: Text(
                   'atilasn90@gmail.com',
                   style: TextStyle(
@@ -46,7 +46,7 @@ class _ContatosState extends State<Contatos> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(10),
                 child: Text(
                   'Telefone:(61)98234-7337',
                   style: TextStyle(
@@ -56,12 +56,9 @@ class _ContatosState extends State<Contatos> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 60),
               Padding(
-                padding: const EdgeInsets.only(
-                  top: 60,
-                  right: 30,
-                ),
+                padding: const EdgeInsets.all(1),
                 child: Text(
                   '  Rede Social',
                   style: TextStyle(
@@ -73,10 +70,10 @@ class _ContatosState extends State<Contatos> {
               ),
               SizedBox(height: 25),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Padding(
-                      padding: const EdgeInsets.all(2),
+                      padding: const EdgeInsets.all(1),
                       child: FlatButton(
                         onPressed: () async {
                           const url = 'https://web.facebook.com/?_rdc=1&_rdr';
@@ -93,7 +90,7 @@ class _ContatosState extends State<Contatos> {
                         ),
                       )),
                   Padding(
-                      padding: const EdgeInsets.all(2),
+                      padding: const EdgeInsets.all(1),
                       child: FlatButton(
                         onPressed: () async {
                           const url = 'https://twitter.com/home?lang=e';
@@ -110,7 +107,7 @@ class _ContatosState extends State<Contatos> {
                         ),
                       )),
                   Padding(
-                      padding: const EdgeInsets.all(2),
+                      padding: const EdgeInsets.all(1),
                       child: FlatButton(
                         onPressed: () async {
                           const url = 'https://www.linkedin.com/feed/';

@@ -47,9 +47,8 @@ class _DashboardState extends State<Dashboard> {
             children: <Widget>[
               UserAccountsDrawerHeader(
                 decoration: BoxDecoration(color: Colors.lightBlueAccent[100]),
-                accountName: new Text('                           Bem Vindo '),
-                accountEmail:
-                    new Text('           Quanto custa criar um App ?'),
+                accountName: new Text('Bem Vindo '),
+                accountEmail: new Text('Quanto custa criar um App ?'),
               ),
               ListTile(
                 leading: Icon(Icons.add_to_photos),
@@ -113,7 +112,7 @@ class _DashboardState extends State<Dashboard> {
                 ),
                 SizedBox(height: 20),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.only(
@@ -136,10 +135,10 @@ class _DashboardState extends State<Dashboard> {
                   ],
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(right: 1),
+                      padding: const EdgeInsets.only(right: 10),
                       child: Text(
                         'Orçamentos',
                         style: TextStyle(
@@ -153,7 +152,7 @@ class _DashboardState extends State<Dashboard> {
                 ),
                 SizedBox(height: 20),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.only(
@@ -177,10 +176,10 @@ class _DashboardState extends State<Dashboard> {
                 ),
                 SizedBox(height: 10),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(right: 1),
+                      padding: const EdgeInsets.only(right: 10),
                       child: Text(
                         'Contatos',
                         style: TextStyle(

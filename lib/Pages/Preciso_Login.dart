@@ -19,7 +19,7 @@ class _Precisa_LoginState extends State<Precisa_Login> {
         body: Container(
           margin: EdgeInsets.only(left: 10, right: 10, top: 30),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 5),
