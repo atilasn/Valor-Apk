@@ -44,7 +44,7 @@ class _Idiomas extends State<Idiomas> {
                       child: Text(
                         'Única Lingua',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
@@ -64,7 +64,7 @@ class _Idiomas extends State<Idiomas> {
                       child: Text(
                         'Bilíngue',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
@@ -84,7 +84,7 @@ class _Idiomas extends State<Idiomas> {
                       child: Text(
                         'Multilíngue',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
