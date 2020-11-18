@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:valor_app/Pages/dashboard.dart';
 import 'dart:async';
 
-
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -36,14 +35,10 @@ class _MyAppState extends State<MyApp> {
         child: Padding(
           padding: const EdgeInsets.only(top: 1),
           child: Container(
-            child:
-            Text(
-              'Valor App',
-              style: TextStyle(
-                fontSize: 45.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
+            child: Image.asset(
+              "assets/logo_tipo (1).png",
+              height: 200,
+              width: 180,
             ),
           ),
         ),

@@ -91,3 +91,9 @@ flutter:
     - assets/Login Atenticacao.png
     - assets/Idioma.png
     - assets/Resultado.png
+    - assets/logo_tipo.png
+    - assets/logo_tipo (1).png
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "icons/Icons.png"
