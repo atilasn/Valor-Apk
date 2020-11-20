@@ -38,6 +38,9 @@ class _Precisa_LoginState extends State<Precisa_Login> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Sim',
@@ -58,6 +61,9 @@ class _Precisa_LoginState extends State<Precisa_Login> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Não',

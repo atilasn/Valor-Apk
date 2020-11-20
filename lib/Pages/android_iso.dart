@@ -38,6 +38,9 @@ class _android_isoState extends State<android_iso> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Android & IOS',
@@ -58,6 +61,9 @@ class _android_isoState extends State<android_iso> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Android',
@@ -78,6 +84,9 @@ class _android_isoState extends State<android_iso> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'IOS',

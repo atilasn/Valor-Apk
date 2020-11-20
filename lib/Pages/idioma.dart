@@ -40,6 +40,8 @@ class _Idiomas extends State<Idiomas> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(20)),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Única Lingua',
@@ -60,6 +62,9 @@ class _Idiomas extends State<Idiomas> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Bilíngue',
@@ -80,6 +85,9 @@ class _Idiomas extends State<Idiomas> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Multilíngue',

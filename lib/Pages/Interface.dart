@@ -20,56 +20,70 @@ class _InterFaceState extends State<InterFace> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 75, top: 10),
-                child: FlatButton(
-                  child: Image.asset(
-                    "assets/interface_simples.png",
-                    height: 140,
-                    width: 200,
+              Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30, left: 5),
+                    child: Image.asset(
+                      "assets/Personalizado.png",
+                      height: 200,
+                      width: 200,
+                    ),
                   ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Precisa_Login()));
-                  },
-                ),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 2, left: 110),
-                child: Text(
-                  'Interface Simples          ',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blueGrey,
+              SizedBox(height: 30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(1),
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
+                      color: Colors.lightBlueAccent[100],
+                      child: Text(
+                        'Simples',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Precisa_Login()));
+                      },
+                    ),
                   ),
-                ),
-              ),
+                  Padding(
+                    padding: const EdgeInsets.all(1),
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
+                      color: Colors.lightBlueAccent[100],
+                      child: Text(
+                        'personalizado',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Precisa_Login()));
+                      },
+                    ),
+                  ),
 
-              Padding(
-                padding: const EdgeInsets.only(top: 2, left: 80),
-                child: FlatButton(
-                  child: Image.asset(
-                    "assets/Personalizado.png",
-                    height: 140,
-                    width: 200,
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Precisa_Login()));
-                  },
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 2, left: 80),
-                child: Text(
-                  'Interface Personalizada',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blueGrey,
-                  ),
-                ),
+                ],
               ),
             ],
           ),

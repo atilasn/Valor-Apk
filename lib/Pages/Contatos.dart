@@ -76,7 +76,7 @@ class _ContatosState extends State<Contatos> {
                       padding: const EdgeInsets.all(1),
                       child: FlatButton(
                         onPressed: () async {
-                          const url = 'https://web.facebook.com/?_rdc=1&_rdr';
+                          const url = 'https://www.facebook.com/enzo.fialho.18';
                           if (await canLaunch(url)) {
                             await launch(url);
                           } else {
@@ -93,7 +93,7 @@ class _ContatosState extends State<Contatos> {
                       padding: const EdgeInsets.all(1),
                       child: FlatButton(
                         onPressed: () async {
-                          const url = 'https://twitter.com/home?lang=e';
+                          const url = 'https://twitter.com/enzofialho1';
                           if (await canLaunch(url)) {
                             await launch(url);
                           } else {
@@ -110,7 +110,7 @@ class _ContatosState extends State<Contatos> {
                       padding: const EdgeInsets.all(1),
                       child: FlatButton(
                         onPressed: () async {
-                          const url = 'https://www.linkedin.com/feed/';
+                          const url = 'https://www.linkedin.com/in/enzo-fialho-da-silva-058a091b8/';
                           if (await canLaunch(url)) {
                             await launch(url);
                           } else {
@@ -123,6 +123,43 @@ class _ContatosState extends State<Contatos> {
                           width: 80,
                         ),
                       )),
+                ],
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 35),
+                    child: Text(
+                      'FaceBook',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 75),
+                    child: Text(
+                      'twitter',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 75),
+                    child: Text(
+                      'Linkedin',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],

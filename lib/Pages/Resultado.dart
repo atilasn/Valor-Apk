@@ -59,6 +59,9 @@ class _Resultado extends State<Resultado> {
                   Padding(
                     padding: const EdgeInsets.all(1),
                     child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(18.0)
+                      ),
                       color: Colors.lightBlueAccent[100],
                       child: Text(
                         'Recomeçar',
