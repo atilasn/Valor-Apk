@@ -18,31 +18,29 @@ class _Resultado extends State<Resultado> {
         body: Container(
           margin: EdgeInsets.only(left: 10, right: 10, top: 30),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 5),
                 child: Image.asset(
                   "assets/Resultado.png",
-                  height: 140,
-                  width: 250,
+                  height: 415,
+                  width: 300,
                 ),
               ),
-              SizedBox(
-                height: 40,
-              ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
                   Padding(
                     padding: const EdgeInsets.only(
-                      top: 0,
-                      right: 150,
+                      top: 10,
+                      left: 120,
                     ),
                     child: Text(
-                      'Valor = ',
+                      'TOTAL = ',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.blueGrey,
                       ),
@@ -53,33 +51,45 @@ class _Resultado extends State<Resultado> {
               SizedBox(
                 height: 40,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Recomeçar',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+              Expanded(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    SizedBox(
+                      width: 70,
+                    ),
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'RECOMEÇAR',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Dashboard()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Dashboard()));
-                      },
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: 70,
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 75,
               ),
             ],
           ),

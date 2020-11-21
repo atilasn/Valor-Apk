@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:valor_app/Pages/Interface.dart';
 import 'package:valor_app/Pages/Resultado.dart';
 
 
@@ -27,86 +28,96 @@ class _Idiomas extends State<Idiomas> {
                 padding: const EdgeInsets.only(top: 30, left: 5),
                 child: Image.asset(
                   "assets/Idioma.png",
-                  height: 140,
-                  width: 250,
+                  height: 460,
+                  width: 400,
                 ),
               ),
               SizedBox(
                 height: 40,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(20)),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Única Lingua',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+              Expanded(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'ÚNICA LINGUA',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => InterFace()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Resultado()));
-                      },
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Bilíngue',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'BILÍNGUE',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => InterFace()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Resultado()));
-                      },
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Multilíngue',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'MULTILÍNGUE',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => InterFace()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Resultado()));
-                      },
-                    ),
-                  ),
-                ],
+                    )
+                  ],
+                ),
               ),
+              SizedBox(height: 75,),
             ],
           ),
         ),

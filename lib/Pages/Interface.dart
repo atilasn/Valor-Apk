@@ -17,6 +17,7 @@ class _InterFaceState extends State<InterFace> {
             backgroundColor: Colors.lightBlueAccent[100],
             title: Text("Qual tipo de Interface ?")),
         body: Container(
+          margin: EdgeInsets.only(left: 10, right: 10, top: 30),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -26,65 +27,73 @@ class _InterFaceState extends State<InterFace> {
                     padding: const EdgeInsets.only(top: 30, left: 5),
                     child: Image.asset(
                       "assets/Personalizado.png",
-                      height: 200,
-                      width: 200,
+                      height: 470,
+                      width: 300,
                     ),
                   ),
                 ],
               ),
               SizedBox(height: 30),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Simples',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Precisa_Login()));
-                      },
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'personalizado',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Precisa_Login()));
-                      },
-                    ),
-                  ),
+              Expanded(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
 
-                ],
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'SIMPLES',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Precisa_Login()));
+                          },
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 60,),
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'PERSONALIZADO',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Precisa_Login()));
+                          },
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
+              SizedBox(height: 75,),
             ],
           ),
         ),

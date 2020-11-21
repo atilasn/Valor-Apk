@@ -26,63 +26,73 @@ class _Integracao_Web extends State<Integracao_Web> {
                 padding: const EdgeInsets.only(top: 30, left: 5),
                 child: Image.asset(
                   "assets/intergracao web.png",
-                  height: 140,
-                  width: 250,
+                  height: 460,
+                  width: 300,
                 ),
               ),
               SizedBox(
                 height: 40,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Sim',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+              Expanded(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'SIM',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Perfil_proprio()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Perfil_proprio()));
-                      },
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Não',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                    SizedBox(
+                      width: 60,
+                    ),
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'NÃO',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Perfil_proprio()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Perfil_proprio()));
-                      },
-                    ),
-                  ),
-                ],
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 75,
               ),
             ],
           ),

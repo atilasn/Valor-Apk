@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:valor_app/Pages/Interface.dart';
+import 'package:valor_app/Pages/idioma.dart';
 
 class android_iso extends StatefulWidget {
   @override
@@ -14,102 +15,114 @@ class _android_isoState extends State<android_iso> {
         appBar: AppBar(
             centerTitle: true,
             backgroundColor: Colors.lightBlueAccent[100],
-            title: Text("Qual tipo de aplicativo?")),
+            title: Text("Qual Sistema ?")),
         body: Container(
+          margin: EdgeInsets.only(left: 10, right: 10, top: 30),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 30, left: 5),
+                    padding: const EdgeInsets.only(top: 50, left: 5),
                     child: Image.asset(
                       "assets/sistema.png",
-                      height: 200,
-                      width: 200,
+                      height: 450,
+                      width: 300,
                     ),
                   ),
                 ],
               ),
               SizedBox(height: 30),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Android & IOS',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+              Expanded(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'ANDROID & IOS',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Idiomas()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => InterFace()));
-                      },
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'Android',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'ANDROID',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Idiomas()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => InterFace()));
-                      },
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0)
-                      ),
-                      color: Colors.lightBlueAccent[100],
-                      child: Text(
-                        'IOS',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: FlatButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(18.0)
+                          ),
+                          textColor: Colors.white,
+                          color: Colors.lightBlueAccent[100],
+                          child: Text(
+                            'ISO',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => InterFace()));
+                          },
                         ),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => InterFace()));
-                      },
-                    ),
-                  ),
-                ],
+                    )
+                  ],
+                ),
               ),
+              SizedBox(height: 75,),
             ],
           ),
         ),
       ),
     );
   }
+
+  void checkAnswer(bool bool) {}
 }
